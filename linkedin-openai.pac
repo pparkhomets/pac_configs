@@ -11,12 +11,37 @@ function FindProxyForURL(url, host) {
   }
 
   if (
+    // LinkedIn
     inDomain("linkedin.com") ||
     inDomain("licdn.com") ||
+
+    // OpenAI / ChatGPT core
     inDomain("openai.com") ||
     inDomain("chatgpt.com") ||
     inDomain("oaistatic.com") ||
-    inDomain("oaiusercontent.com")
+    inDomain("oaiusercontent.com") ||
+
+    // OpenAI-recommended allowlist dependencies for ChatGPT web/app access
+    inDomain("ct.sendgrid.net") ||
+    inDomain("featuregates.org") ||
+    inDomain("featureassets.org") ||
+    inDomain("intercom.io") ||
+    inDomain("intercomcdn.com") ||
+    inDomain("statsig.com") ||
+    inDomain("statsigapi.net") ||
+    inDomain("workos.com") ||
+    inDomain("workoscdn.com") ||
+    inDomain("imgix.net") ||
+    inDomain("cloudflare.com") ||
+    inDomain("stripe.com") ||
+    inDomain("sentry.io") ||
+    inDomain("datadoghq.com") ||
+    inDomain("prodregistryv2.org") ||
+    inDomain("openaimerge.com") ||
+
+    // Additional hosts seen in real OpenAI/API flows
+    inDomain("auth0.com") ||
+    inDomain("azureedge.net")
   ) {
     return proxy;
   }

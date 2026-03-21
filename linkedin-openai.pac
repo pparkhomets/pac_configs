@@ -21,6 +21,10 @@ function FindProxyForURL(url, host) {
     inDomain("oaistatic.com") ||
     inDomain("oaiusercontent.com") ||
 
+    // Anthropic / Claude core
+    inDomain("anthropic.com") ||
+    inDomain("claude.ai") ||
+
     // OpenAI-recommended allowlist dependencies for ChatGPT web/app access
     inDomain("ct.sendgrid.net") ||
     inDomain("featuregates.org") ||

@@ -24,6 +24,9 @@ function FindProxyForURL(url, host) {
     // Anthropic / Claude core
     inDomain("anthropic.com") ||
     inDomain("claude.ai") ||
+    inDomain("claude.com") ||
+    inDomain("claudeusercontent.com") ||
+    host === "servd-anthropic-website.b-cdn.net" ||
 
     // OpenAI-recommended allowlist dependencies for ChatGPT web/app access
     inDomain("ct.sendgrid.net") ||

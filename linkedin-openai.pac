@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-  var proxy = "PROXY 194.87.227.114:3128";
+  var proxy = "PROXY news.paul-ai.net:3128";
 
   host = host.toLowerCase();
   if (host.charAt(host.length - 1) === ".") {

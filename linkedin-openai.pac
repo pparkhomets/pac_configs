@@ -28,6 +28,9 @@ function FindProxyForURL(url, host) {
     inDomain("claudeusercontent.com") ||
     host === "servd-anthropic-website.b-cdn.net" ||
 
+    // Lovable
+    inDomain("lovable.dev") ||
+
     // OpenAI-recommended allowlist dependencies for ChatGPT web/app access
     inDomain("ct.sendgrid.net") ||
     inDomain("featuregates.org") ||

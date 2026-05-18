@@ -21,6 +21,9 @@ function FindProxyForURL(url, host) {
     inDomain("oaistatic.com") ||
     inDomain("oaiusercontent.com") ||
 
+    // Lovable
+    inDomain("lovable.dev") ||
+
     // Instagram core + API + CDN
     inDomain("instagram.com") ||
     inDomain("instagr.am") ||

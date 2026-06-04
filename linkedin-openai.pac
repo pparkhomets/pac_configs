@@ -31,6 +31,9 @@ function FindProxyForURL(url, host) {
     // Lovable
     inDomain("lovable.dev") ||
 
+    // Notion
+    inDomain("notion.com") ||
+
     // OpenAI-recommended allowlist dependencies for ChatGPT web/app access
     inDomain("ct.sendgrid.net") ||
     inDomain("featuregates.org") ||

@@ -33,6 +33,7 @@ function FindProxyForURL(url, host) {
 
     // Notion
     inDomain("notion.com") ||
+    inDomain("notion.so") ||
 
     // OpenAI-recommended allowlist dependencies for ChatGPT web/app access
     inDomain("ct.sendgrid.net") ||
